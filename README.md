@@ -1,27 +1,18 @@
-# React + TypeScript + Vite
+# Take-home assignment.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- Create a function below called removeDuplicateFromArray that takes one parameter.
 
-Currently, two official plugins are available:
+  - Make the first parameter take in a string array.
+  - Return an array where the duplicates in-place such that each unique string appears only once. The relative order of the strings from the original array should be kept the same.
+  - Example:
+  - console.log(removeDuplicateFromArray(["chicken", "dog", "cat", "cat", "dog"]));
+    - This should output ["chicken", "dog", "cat"];
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- Create an exportable component called MyFrom and place all the JSX code below inside
+  - Create an input that will take in a user input
+  - Track the user's input in a state variable using react hooks
+  - Track a string array state variable using react hooks
+  - Initialize the user's input to be "chicken" when the component loads
+  - Create a button with the text "Add" and have the onClick event append it to your string array state
+  - Create a button with the text submit that will trigger the function you wrote above removeDuplicateFromArray
+  - Create in bolded text a display element that will display the final string array on the screen in a comma-delineated list
